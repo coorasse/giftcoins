@@ -1,0 +1,11 @@
+/.bundle
+
+/log/*
+!/log/.keep
+!/tmp/.keep
+
+.byebug_history
+.idea
+config/application.yml
+coverage
+tmp

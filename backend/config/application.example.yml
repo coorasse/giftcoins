@@ -1,0 +1,5 @@
+HOST: 'localhost'
+PORT: '3000'
+GOOGLE_CLIENT_SECRET: ''
+GOOGLE_CLIENT_ID: ''
+GOOGLE_REDIRECT_URI: 'http://localhost:4200/oauth2callback'

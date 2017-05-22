@@ -1,0 +1,15 @@
+#!/bin/sh
+
+cd backend
+cp config/application.example.yml config/application.yml
+bundle
+bundle exec rails db:setup
+
+cd ..
+
+cd frontend
+cp .example.env .env
+yarn install
+
+cd ..
+
