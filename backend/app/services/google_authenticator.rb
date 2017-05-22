@@ -18,7 +18,6 @@ class GoogleAuthenticator
       redirect_uri: ENV['GOOGLE_REDIRECT_URI'] }
   end
 
-
   def self.user_info(code)
     Google::Apis::PlusV1::PlusService.new.tap do |user_info|
       user_info.key = ENV['GOOGLE_CLIENT_ID'] if ENV['GOOGLE_CLIENT_ID']

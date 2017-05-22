@@ -2,11 +2,13 @@ require 'rails_helper'
 
 describe User do
   describe '#from_google' do
-    let(:user_info) { double(:user_info,
-                             emails: [double(:email, value: 'email')],
-                             display_name: 'name',
-                             image: double(:image, url: 'image_url'),
-                             id: 'google_id') }
+    let(:user_info) do
+      double(:user_info,
+             emails: [double(:email, value: 'email')],
+             display_name: 'name',
+             image: double(:image, url: 'image_url'),
+             id: 'google_id')
+    end
     it 'creates or load the correct user' do
       user = User.from_google(user_info)
       expect(user.email).to eq 'email'

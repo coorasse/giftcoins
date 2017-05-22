@@ -26,8 +26,8 @@ group :development, :test do
   gem 'brakeman'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-rails'
-  gem 'rubocop'
   gem 'rspec-rails'
+  gem 'rubocop'
 end
 
 group :development do
