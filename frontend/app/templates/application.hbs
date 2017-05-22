@@ -1,8 +1,5 @@
 <h1>GiftCoins</h1>
 
-API Key: {{config.apiKey}} <br />
-Authorization Code: {{session.data.authenticated.authorizationCode}} <br />
-
 {{#if session.isAuthenticated}}
   <button onclick={{action "logout"}}>Log Out</button>
 {{else}}

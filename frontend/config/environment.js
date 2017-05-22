@@ -14,8 +14,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      backendUrl: process.env.BACKEND_URL
     },
     torii: {
       sessionServiceName: 'session',
@@ -23,7 +22,7 @@ module.exports = function(environment) {
         'google-oauth2': {
           apiKey: process.env.GOOGLE_CLIENT_ID,
           redirectUri: `${process.env.FRONTEND_URL}/oauth2callback`,
-          tokenExchangeUri: `${process.env.BACKEND_URL}`
+          tokenExchangeUri: `${process.env.BACKEND_URL}/api/v1/token`
         }
       }
     }

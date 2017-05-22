@@ -26,6 +26,6 @@ class GoogleAuthenticator
   end
 
   def self.payload(user)
-    { auth_token: JsonWebTokenService.encode(user_id: user.id), user: user }
+    { access_token: JsonWebTokenService.encode(user_id: user.id), user: user }
   end
 end
