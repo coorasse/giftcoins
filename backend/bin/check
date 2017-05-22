@@ -1,6 +1,6 @@
 #!/bin/bash
 
-grep --exclude-dir="app/assets/typings/**" -i -r 'console.log' app spec
+grep --exclude-dir="app/assets/typings/**" -i -r 'console.log' app
 if [ $? -eq 0 ]; then
   echo -e '\033[31mconsole.log found. Please fix them and try again, commit aborted\033[0m'
   exit 1
@@ -24,7 +24,7 @@ fi
 
 echo -e '\n\033[35mRunning tests\033[0m'
 bin/rails db:environment:set RAILS_ENV=test
-bundle exec rake
+bundle exec rspec
 if [ ! $? -eq 0 ]; then
   echo -e '\033[31mTests did not run successfully, commit aborted\033[0m'
   exit 1

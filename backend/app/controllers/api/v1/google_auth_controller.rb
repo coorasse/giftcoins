@@ -14,7 +14,7 @@ module Api
       private
 
       def require_code
-        forbidden unless params[:code]
+        forbidden(Exception.new('No code present in the request')) unless params[:code]
       end
 
       def load_user
