@@ -9,3 +9,4 @@ echo "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID" >> .env
 echo "FRONTEND_URL=$FRONTEND_URL" >> .env
 echo "BACKEND_URL=$BACKEND_URL" >> .env
 yarn build
+echo "/*    /index.html   200" >> dist/_redirects
