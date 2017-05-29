@@ -38,3 +38,13 @@ Unit tests are run on each specific project. Look at the README of the project t
 You can run e2e tests with
     
     bin/check
+
+## CI
+
+Tests run on semaphore CI.
+
+## CD
+
+The backend is deployed through Semaphore to Heroku
+
+The frontend is deployed using Netlify

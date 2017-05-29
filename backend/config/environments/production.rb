@@ -10,6 +10,8 @@ Rails.application.configure do
 
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+  config.force_ssl = true
+
   config.log_level = :debug
 
   config.log_tags = [:request_id]
