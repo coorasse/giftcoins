@@ -2,6 +2,7 @@
 
 cd frontend
 npm install -g yarn
+npm install -g bower
 yarn install
 bower install
 echo "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID" >> .env
