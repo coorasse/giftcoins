@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd frontend
+npm install yarn
 yarn install
 echo "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID" >> .env
 echo "FRONTEND_URL=$FRONTEND_URL" >> .env
